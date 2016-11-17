@@ -10,7 +10,7 @@
     <script>
 if (window.PaymentRequest) {
   var androidpay = new PaymentRequest([{
-        supportedMethods: ['https://android.com/pay'],
+        supportedMethods: ['https://android.com/pay', 'visa', 'mastercard', 'amex', 'discover', 'diners', 'jcb', 'unionpay'],
         data: {
           merchantName: 'merchantname',
           allowedCardNetworks: ['AMEX', 'MASTERCARD', 'VISA', 'DISCOVER'],
